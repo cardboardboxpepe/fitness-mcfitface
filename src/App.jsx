@@ -3,17 +3,8 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
 import AllExercises from "./listOfExercises";
-
-const CreateRoute = composite => {
-  return (
-    <>
-      <a href={composite.path}>{composite.path}</a>
-      <Route path={composite.path}>
-        {composite.component(composite.props)}
-      </Route>
-    </>
-  );
-};
+import { Exercise } from "./exerciseComponent/exercise";
+import { MainPage } from "./mainPageComponent/mainpage";
 
 function App() {
   return (
@@ -22,9 +13,20 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <BrowserRouter>
           <Switch>
-            {AllExercises.map(composite => {
-              CreateRoute(composite)
-            })}
+            <Route exact path="/">
+              <MainPage {...AllExercises[0].props} />
+            </Route>
+            <Route
+              exact
+              path="/exercise/:id"
+              render={({ match }) => (
+                <Exercise
+                  {...AllExercises.find(
+                    composite => composite.path === "/" + match.params.id
+                  ).props}
+                />
+              )}
+            />
           </Switch>
         </BrowserRouter>
       </header>
