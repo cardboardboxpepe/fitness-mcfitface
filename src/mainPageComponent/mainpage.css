@@ -1,0 +1,8 @@
+.exerciseContainer {
+    display: block;
+}
+
+.exerciseInner {
+    font-size: 4rem;
+    color: coral;
+}
