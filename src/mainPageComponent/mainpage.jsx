@@ -2,12 +2,13 @@ import React from "react";
 import { ExerciseRouterPrefix } from "../constants";
 import AllExercises from "../data/listOfExercises";
 import "./mainpage.css";
+import "../App.css";
 
 const createLinks = composites => {
-  return composites.map(composite => {
+  return composites.map((composite, index) => {
     return (
-      <li>
-        <a href={ExerciseRouterPrefix + composite.path}>
+      <li key={index}>
+        <a className="App-link" href={ExerciseRouterPrefix + composite.path}>
           {composite.props.title}
         </a>
       </li>
