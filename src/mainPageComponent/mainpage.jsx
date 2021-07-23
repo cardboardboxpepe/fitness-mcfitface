@@ -15,7 +15,7 @@ const createLinks = composites => {
   });
 };
 
-export function MainPage(props) {
+export function MainPage() {
   return (
     <div className="exerciseContainer">
       <h1>"Welcome to Fitness McFitFace"</h1>

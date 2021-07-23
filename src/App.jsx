@@ -19,7 +19,7 @@ function App() {
         <BrowserRouter>
           <Switch>
             <Route exact path="/">
-              <MainPage {...AllExercises[0].props} />
+              <MainPage/>
             </Route>
             <Route
               exact
