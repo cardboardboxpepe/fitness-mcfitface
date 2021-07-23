@@ -5,6 +5,7 @@ import "./App.css";
 import AllExercises from "./listOfExercises";
 import { Exercise } from "./exerciseComponent/exercise";
 import { MainPage } from "./mainPageComponent/mainpage";
+import { ExerciseRouterPrefix } from "./constants"
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
             </Route>
             <Route
               exact
-              path="/exercise/:id"
+              path={ExerciseRouterPrefix + "/:id"}
               render={({ match }) => (
                 <Exercise
                   {...AllExercises.find(
