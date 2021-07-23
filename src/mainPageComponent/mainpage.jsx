@@ -22,7 +22,6 @@ export function MainPage() {
       <h1>"Welcome to Fitness McFitFace"</h1>
       <div className="exerciseInner">
         <h1>Main Page</h1>
-        <p>"This website is powered by react."</p>
         <h2>
           Here is a list of all the exercises catalogged within this website
         </h2>
