@@ -5,9 +5,9 @@ export function Exercise(props) {
   return (
     <>
       <a href="/">Back to main page</a>
-      <div className="exerciseContainer">
+      <div className="Exercise-container">
         <h1>{props.title}</h1>
-        <div className="exerciseInner">
+        <div className="Exercise-inner">
           <p>{props.innertext}</p>
         </div>
       </div>

@@ -1,8 +1,8 @@
-.exerciseContainer {
+.Exercise-container {
     display: block;
 }
 
-.exerciseInner {
+.Exercise-inner {
     font-size: 4rem;
     color: coral;
 }

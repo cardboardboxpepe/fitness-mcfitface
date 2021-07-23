@@ -18,9 +18,9 @@ const createLinks = composites => {
 
 export function MainPage() {
   return (
-    <div className="exerciseContainer">
+    <div className="Main-container">
       <h1>"Welcome to Fitness McFitFace"</h1>
-      <div className="exerciseInner">
+      <div className="Main-inner">
         <h1>Main Page</h1>
         <h2>
           Here is a list of all the exercises catalogged within this website

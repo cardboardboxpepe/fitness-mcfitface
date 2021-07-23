@@ -1,8 +1,8 @@
-.exerciseContainer {
+.Main-container {
     display: block;
 }
 
-.exerciseInner {
-    font-size: 4rem;
-    color: coral;
+.Main-inner {
+    font-size: 3rem;
+    color: black;
 }
