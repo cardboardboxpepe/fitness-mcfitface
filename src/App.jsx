@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
-import AllExercises from "./listOfExercises";
+import AllExercises from "./data/listOfExercises";
 import { Exercise } from "./exerciseComponent/exercise";
 import { MainPage } from "./mainPageComponent/mainpage";
 import { ExerciseRouterPrefix } from "./constants"

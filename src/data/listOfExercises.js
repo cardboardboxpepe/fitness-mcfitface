@@ -1,15 +1,6 @@
-import { Exercise } from "./exerciseComponent/exercise";
-import { MainPage } from "./mainPageComponent/mainpage"
+import { Exercise } from "../exerciseComponent/exercise";
 
 const AllExercises = [
-  {
-    path: "/",
-    component: MainPage,
-    props: {
-      title: "Welcome to Fitness McFitFace",
-      innertext: "This website is powered by react."
-    }
-  },
   {
     path: "/pullup",
     component: Exercise,
