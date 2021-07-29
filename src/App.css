@@ -2,41 +2,6 @@
   text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 18vh;
-  display: flex;
-  flex-direction: row;
-  color: white;
-}
-
-.App-header > * {
-  flex: 1;
-  display: flex;
-  align-items: center;
-}
-
-.App-header:nth-child(0) {
-  justify-content: flex-start;
-}
-
-.App-header:nth-child(1) {
-  justify-content: center;
-}
-
-.App-header:nth-child(2) {
-  justify-content: flex-end;
-}
-
-.App-logo {
-  max-height: 18vmin;
-  pointer-events: none;
-}
-
-.App-title {
-  font-size: 2em;
-}
-
 .App-link {
   color: #61dafb;
   text-decoration: none;

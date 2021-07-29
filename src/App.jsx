@@ -6,15 +6,12 @@ import AllExercises from "./data/listOfExercises";
 import { Exercise } from "./exerciseComponent/exercise";
 import { MainPage } from "./mainPageComponent/mainpage";
 import { ExerciseRouterPrefix } from "./constants";
+import Header from "./headerComponent/header";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1 className="App-title">Fitness McFitFace</h1>
-        <div></div>
-      </header>
+      <Header/>
       <section className="App-body">
         <BrowserRouter>
           <Switch>
