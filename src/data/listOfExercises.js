@@ -7,7 +7,10 @@ const AllExercises = [
     props: {
       title: "Pull Up",
       innertext: "this is a fuckin a Pull Up bro"
-    }
+    },
+    tags: [
+      "arms"
+    ]
   },
   {
     path: "/chinup",
@@ -15,7 +18,10 @@ const AllExercises = [
     props: {
       title: "Chin Up",
       innertext: "this is a fuckin a Chin Up bro"
-    }
+    },
+    tags: [
+      "arms"
+    ]
   },
   {
     path: "/pushup",
@@ -23,7 +29,10 @@ const AllExercises = [
     props: {
       title: "Push Up",
       innertext: "this is a fuckin a Push Up bro"
-    }
+    },
+    tags: [
+      "arms"
+    ]
   },
   {
     path: "/russiantwist",
@@ -31,7 +40,10 @@ const AllExercises = [
     props: {
       title: "Russian Twist",
       innertext: "this is a fuckin a Russian Twist bro"
-    }
+    },
+    tags: [
+      "core"
+    ]
   },
   {
     path: "/plank",
@@ -39,7 +51,10 @@ const AllExercises = [
     props: {
       title: "Plank",
       innertext: "this is a fuckin a Plank bro"
-    }
+    },
+    tags: [
+      "core"
+    ]
   },
   {
     path: "/shoulderpushup",
@@ -47,7 +62,10 @@ const AllExercises = [
     props: {
       title: "Shoulder Push Up",
       innertext: "this is a fuckin a Shoulder Push Up bro"
-    }
+    },
+    tags: [
+      "arms"
+    ]
   }
 ];
 

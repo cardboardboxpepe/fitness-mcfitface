@@ -6,3 +6,28 @@
     font-size: 3rem;
     color: black;
 }
+
+.Main-tagspread {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    padding: 5px; /* taken from https://stackoverflow.com/a/20653092 */
+}
+
+.Main-tag {
+    padding-left: 0.75rem;
+    border: 4px solid #61dafb;
+    border-radius: 3.25px;
+    color: #61dafb;
+    margin: 5px; /* taken from https://stackoverflow.com/a/20653092 */
+    width: auto;
+}
+
+.Main-tag > span {
+    vertical-align: baseline;
+    line-height: 5px;
+    position: relative;
+    left: -20%;
+}
