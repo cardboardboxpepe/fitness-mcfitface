@@ -16,7 +16,7 @@ const createLinks = composites => {
   });
 };
 
-export function MainPage() {
+function MainPage() {
   return (
     <div className="Main-container">
       <h1>"Welcome to Fitness McFitFace"</h1>
@@ -30,3 +30,5 @@ export function MainPage() {
     </div>
   );
 }
+
+export default MainPage;

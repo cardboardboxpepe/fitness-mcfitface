@@ -1,4 +1,4 @@
-import { Exercise } from "../exerciseComponent/exercise";
+import Exercise from "../exerciseComponent/exercise";
 
 const AllExercises = [
   {

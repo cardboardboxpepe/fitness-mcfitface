@@ -1,7 +1,7 @@
 import React from "react";
 import "./exercise.css";
 
-export function Exercise(props) {
+function Exercise(props) {
   return (
     <>
       <a href="/">Back to main page</a>
@@ -14,3 +14,5 @@ export function Exercise(props) {
     </>
   );
 }
+
+export default Exercise;
