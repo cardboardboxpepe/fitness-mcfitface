@@ -40,13 +40,47 @@ const searchViaTag = (tag, composites = AllExercises) => {
         return composite.tags.includes(tag);
       });
 };
+
+class TagFilters extends React.Component {
+  constructor(props) {
+    // calling the super class
+    super(props);
+
+    // setting the default state of the component to have all possible tags
+    this.state = { tags: AllTags };
+
+    // This binding is necessary to make `this` work in the callback
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(tag) {
+    // debugging to see the internal state
+    // console.log("setting new state to", tag);
+
+    // setting the state of the component
+    this.setState(_ => ({
+      tags: tag
+    }));
+  }
+
+  render() {
     return (
-      <li className="Main-tag" key={index}>
-        <span>{tag}</span>
-      </li>
+      <>
+        <ul>{createLinks(searchViaTag(this.state.tags))}</ul>
+        <h2>Here is a list of exercises sorted by tag</h2>
+        <div className="Main-tagspread">
+          {AllTags.map((tag, index) => {
+            return (
+              <li className="Main-tag" key={index}>
+                <span onClick={this.handleClick.bind(this, tag)}>{tag}</span>
+              </li>
+            );
+          })}
+        </div>
+      </>
     );
-  });
-};
+  }
+}
 
 function MainPage() {
   return (
@@ -57,9 +91,7 @@ function MainPage() {
         <h2>
           Here is a list of all the exercises catalogged within this website
         </h2>
-        <ul>{createLinks(AllExercises)}</ul>
-        <h2>Here is a list of exercises sorted by tag</h2>
-        <div className="Main-tagspread">{createTagButtons(AllTags)}</div>
+        <TagFilters />
       </div>
     </div>
   );
