@@ -23,13 +23,23 @@ const createLinks = composites => {
 };
 
 /**
- * Takes an array of tags and turns them into an array of div elements to be presented on screen
+ * This function is a future feature to sort an array of exercises by tag and return them to the user
  *
- * @param {String[]} tags list of tags
- * @returns an array of tags turned into <div>s
+ * @param {String[]} tag this is a list of tags
+ * @param {Object[]} composites list of exercises
+ * @returns an array of filtered exercises by inputted tag
  */
-const createTagButtons = tags => {
-  return tags.map((tag, index) => {
+const searchViaTag = (tag, composites = AllExercises) => {
+  // debugging to see what arguments the function was called with
+  // console.log("called searchViaTag with", tag);
+
+  // filtering through the composites
+  return typeof tag === "object" || tag === "all"
+    ? composites
+    : composites.filter(composite => {
+        return composite.tags.includes(tag);
+      });
+};
     return (
       <li className="Main-tag" key={index}>
         <span>{tag}</span>
