@@ -85,11 +85,12 @@ class TagFilters extends React.Component {
 function MainPage() {
   return (
     <div className="Main-container">
-      <h1>"Welcome to Fitness McFitFace"</h1>
+      <h1>Welcome to Fitness McFitFace</h1>
+      <p>No ad nor tracking script in sight, despite it being almost purely JS! Insane! This website is a has repository of exercises along with instructions on how to do them and a tool to make a workout routine with (soon).</p>
       <div className="Main-inner">
         <h1>Main Page</h1>
         <h2>
-          Here is a list of all the exercises catalogged within this website
+          Here is a list of all the exercises catalogued within this website
         </h2>
         <TagFilters />
       </div>
