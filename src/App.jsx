@@ -6,6 +6,7 @@ import AllExercises from "./data/listOfExercises";
 import Exercise from "./exerciseComponent/exercise";
 import MainPage from "./mainPageComponent/mainpage";
 import Header from "./headerComponent/header";
+import Footer from "./footerComponent/footer";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           </Switch>
         </BrowserRouter>
       </section>
+      <Footer/>
     </div>
   );
 }
