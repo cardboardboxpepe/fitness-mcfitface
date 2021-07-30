@@ -4,6 +4,12 @@ import AllExercises from "../data/listOfExercises";
 import "./mainpage.css";
 import "../App.css";
 
+/**
+ * this function takes a list of exercises and then makes links for them
+ * 
+ * @param {Object[]} composites the list of exercises
+ * @returns an array of <li> tags with <a> tags nested within
+ */
 const createLinks = composites => {
   return composites.map((composite, index) => {
     return (
